@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<div id = "maint_container"> 
+<!-- Clock face -->
+<div id="clock">
+	<div id="time">
+		<span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+	</div>
+
+	<!-- Form for setting the alarm -->
+	<form id="alarm-form">
+		<label for="hours">Hours:</label>
+		<input type="number" id="alarm-hours" min="0" max="23">
+		<label for="minutes">Minutes:</label>
+		<input type="number" id="alarm-minutes" min="0" max="59">
+		<label for="seconds">Seconds:</label>
+		<input type="number" id="alarm-seconds" min="0" max="59">
+		<label for="am-pm">AM/PM:</label>
+		<select id="am-pm">
+			<option value="am">AM</option>
+			<option value="pm">PM</option>
+		</select>
+		<button type="submit">Set Alarm</button>
+	</form>
+</div>
+
+<!-- Alarms list -->
+<div id="alarms">
+	<h2>Alarms</h2>
+	<ul id="alarm-list"></ul>
+</div>
+</body>
+
+	<script src="src/index.js">
+	</script>
+	</div>
+	
+</body>
+
+</html>
